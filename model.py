@@ -1,8 +1,17 @@
 import pandas as pd
 #import matplotlib.pyplot as plt
 import sklearn
+
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
+import pytest
+def f():
+    raise SystemExit(1)
+
+def test_mytest():
+    with pytest.raises(SystemExit):
+        f()
+        
 # loading data 
 data = pd.read_csv('iris.csv')
 # changing the column names for convenience
