@@ -16,4 +16,3 @@ knn.fit(X_train, Y_train)
 file = open("trainingresults.txt","w") 
 file.write("Training Accuracy {}".format(knn.score(X_train, Y_train)))
 file.write("Testing Accuracy {}".format(knn.score(X_test, Y_test)))
-
