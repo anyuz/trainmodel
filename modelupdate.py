@@ -29,4 +29,4 @@ file.write("Testing Accuracy {}".format(knn.score(X_test, Y_test)))
 def inc(x):
     return x + 1
 def test_answer():
-    assert inc(3) == 5
+    assert inc(3) > 5
