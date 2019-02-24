@@ -36,4 +36,4 @@ for x in accuracy:
 
 # test RMSE accuracy < bar value if yes publish docker image
 def test_answer():
-    assert accuracydata[0]<= 4
+    assert accuracydata[-1]<= 4
